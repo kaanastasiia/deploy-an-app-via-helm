@@ -1,4 +1,4 @@
-{{- define "chart-library.deployment.tpl" -}}
+{{- define "chart-library.deployment.tpl" }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -44,4 +44,4 @@ spec:
           livenessProbe:
             {{- toYaml . | nindent 12 }}
           {{- end }}
-{{- end -}}
+{{- end }}
