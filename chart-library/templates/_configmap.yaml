@@ -1,4 +1,4 @@
-{{- define "chart-library.configmap" -}}
+{{- define "chart-library.configmap.tpl" -}}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -7,5 +7,5 @@ metadata:
   namespace: {{ .Values.namespace }}
   {{- end }}
 data:
-  {{ include "app-configmap" . | nindent 2 }}
+  {{ include "app-configmap.tpl" . | nindent 2 }}
 {{- end -}}  
