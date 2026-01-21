@@ -1,0 +1,11 @@
+{{- define "chart-library.configmap" -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.confimap_name }}
+  {{- if .Values.namespace }}
+  namespace: {{ .Values.namespace }}
+  {{- end }}
+data:
+  {{ include "app-configmap" . | nindent 2 }}
+{{- end -}}  
