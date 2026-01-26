@@ -1,0 +1,16 @@
+{{- define "chart-library.service" }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.service_name }}
+  {{- if .Values.namespace }}
+  namespace: {{ .Values.namespace }}
+  {{- end }}
+spec:
+  selector:
+    matchLabels:
+      {{ include "app-labels.tpl" . | nindent 6 }}
+  ports:
+  - port: {{ .Values.service_port }}
+    targetPort: {{ .Values.app_port }}
+{{- end }}

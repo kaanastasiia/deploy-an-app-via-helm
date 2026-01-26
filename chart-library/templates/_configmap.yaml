@@ -1,4 +1,4 @@
-{{- define "chart-library.configmap.tpl" }}
+{{- define "chart-library.configmap" }}
 apiVersion: v1
 kind: ConfigMap
 metadata:

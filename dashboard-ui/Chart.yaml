@@ -1,0 +1,9 @@
+apiVersion: v2
+name: dashboard-ui
+description: A Helm library chart to generate Kubernetes dashboard-ui app
+type: application
+version: 0.1.0
+dependencies:
+- name: mylibchart
+  version: 0.1.0
+  repository: file://../chart-library
