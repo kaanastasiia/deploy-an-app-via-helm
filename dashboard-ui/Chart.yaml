@@ -6,4 +6,4 @@ version: 0.1.0
 dependencies:
 - name: chart-library
   version: 0.1.0
-  repository: file:///home/nastya/deploy-an-app-via-helm/chart-library
+  repository: file:///home/user/deploy-an-app-via-helm/chart-library
