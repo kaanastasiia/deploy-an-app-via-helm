@@ -1,6 +1,0 @@
-dependencies:
-- name: chart-library
-  repository: file:///home/nastya/deploy-an-app-via-helm/chart-library
-  version: 0.1.0
-digest: sha256:2e67655112cef0b3315d59453e455cf5101877a86239899168f1a0efdfd50257
-generated: "2026-01-27T22:32:41.352943422+03:00"
