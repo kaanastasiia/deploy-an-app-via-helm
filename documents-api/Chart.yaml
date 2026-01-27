@@ -1,6 +1,6 @@
 apiVersion: v2
-name: dashboard-ui
-description: A Helm library chart to generate Kubernetes dashboard-ui app
+name: documents-api
+description: A Helm library chart to generate Kubernetes documents-api app
 type: application
 version: 0.1.0
 dependencies:

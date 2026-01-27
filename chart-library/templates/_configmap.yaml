@@ -2,10 +2,10 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ .Values.confimap_name }}
+  name: {{ .Values.configmapName }}
   {{- if .Values.namespace }}
   namespace: {{ .Values.namespace }}
   {{- end }}
 data:
-  {{ include "app-configmap.tpl" . | nindent 2 }}
+  {{- include "app-configmap" . | nindent 2 }}
 {{- end }}  

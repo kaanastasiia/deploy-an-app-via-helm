@@ -1,8 +1,0 @@
-deploymentName: dashboard-ui
-namespace: app
-replicaCount: 1
-containerName: dashboard-ui
-image:
-  repository: harbor.1.2.3.4.nip.io/app/dashboardui
-  tag: v1
-  pullPolicy: IfNotPresent

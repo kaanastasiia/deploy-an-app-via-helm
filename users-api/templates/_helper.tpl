@@ -1,5 +1,5 @@
 {{- define "app-labels" -}}
-dashboard-ui: first
+users-api: first
 {{- end }}
 
 {{- define "image-pull-secrets" -}}
@@ -8,7 +8,7 @@ dashboard-ui: first
 
 {{- define "env-from-configmap" -}}
 - configMapRef:
-    name: dashboard-ui-configmap
+    name: users-api-configmap
 {{- end }}
 
 {{- define "env-from-secret" -}}
@@ -32,8 +32,9 @@ periodSeconds: 15
 {{- end }}
 
 {{- define "app-configmap" -}}
-PORT: "3091"
+DATABASE_NAME: "otus_users_db"
+DATABASE_HOST: "postgres"
+DATABASE_PORT: "5432"
+PORT: "3000"
 HOST: "0.0.0.0"
-USERS_API_BASE_URL: "http://4.2.1.1.nip.io:30312"
-DOCUMENTS_API_BASE_URL: "http://4.2.1.1.nip.io:30312"
 {{- end }}

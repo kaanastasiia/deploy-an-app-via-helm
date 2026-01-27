@@ -1,0 +1,15 @@
+deploymentName: dashboard-ui
+namespace: app
+autoscaling:
+  enabled: true
+replicaCount: 1
+containerName: dashboard-ui
+image:
+  repository: harbor.1.2.3.4.nip.io/app/dashboardui
+  tag: v1
+  pullPolicy: IfNotPresent
+service:
+  port: 80
+  name: dashboard-ui-service
+configmapName: dashboard-ui-configmap
+app_port: 3091
