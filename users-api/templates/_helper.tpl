@@ -26,7 +26,7 @@ users-api: first
 
 {{- define "liveness-probe" -}}
 tcpSocket:
-  port: {{ .Values.service.port }}
+  port: {{ .Values.app.port }}
 initialDelaySeconds: 15
 periodSeconds: 15
 {{- end }}

@@ -11,5 +11,5 @@ spec:
       {{- include "app-labels" . | nindent 4 }}
   ports:
   - port: {{ .Values.service.port }}
-    targetPort: {{ .Values.app_port }}
+    targetPort: {{ .Values.app.port }}
 {{- end }}
