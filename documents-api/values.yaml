@@ -12,4 +12,5 @@ service:
   port: 80
   name: users-api-service
 configmapName: users-api-configmap
-app_port: 3000
+app:
+  port: 3000

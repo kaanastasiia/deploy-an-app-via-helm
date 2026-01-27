@@ -32,7 +32,7 @@ spec:
         {{- include "env-from-secret" . | nindent 8 }}
         ports:
         - name: http
-          containerPort: {{ .Values.service.port }}
+          containerPort: {{ .Values.app.port }}
           protocol: TCP
         livenessProbe:
           {{- include "liveness-probe" . | nindent 10 }}

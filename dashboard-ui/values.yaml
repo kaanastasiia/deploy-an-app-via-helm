@@ -12,4 +12,5 @@ service:
   port: 80
   name: dashboard-ui-service
 configmapName: dashboard-ui-configmap
-app_port: 3091
+app:
+  port: 3091
