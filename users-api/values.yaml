@@ -5,7 +5,7 @@ autoscaling:
 replicaCount: 1
 containerName: users-api
 image:
-  repository: harbor.1.2.3.4.nip.io/app/dashboardui
+  repository: harbor.1.2.3.4.nip.io/app/usersapi
   tag: v1
   pullPolicy: IfNotPresent
 service:
