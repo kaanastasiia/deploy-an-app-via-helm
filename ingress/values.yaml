@@ -11,18 +11,3 @@ dashboardService: dashboard-ui-service
 usersService: users-api-service
 docsService: documents-api-service
 
-
-autoscaling:
-  enabled: true
-replicaCount: 1
-containerName: dashboard-ui
-image:
-  repository: harbor.1.2.3.4.nip.io/app/dashboardui
-  tag: v1
-  pullPolicy: IfNotPresent
-service:
-  port: 80
-  name: dashboard-ui-service
-configmapName: dashboard-ui-configmap
-app:
-  port: 3091
