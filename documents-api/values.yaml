@@ -1,16 +1,16 @@
-deploymentName: users-api
+deploymentName: documents-api
 namespace: app
 autoscaling:
   enabled: true
 replicaCount: 1
-containerName: users-api
+containerName: documents-api
 image:
   repository: harbor.1.2.3.4.nip.io/app/dashboardui
   tag: v1
   pullPolicy: IfNotPresent
 service:
   port: 80
-  name: users-api-service
-configmapName: users-api-configmap
+  name: documents-api-service
+configmapName: documents-api-configmap
 app:
-  port: 3000
+  port: 3001
