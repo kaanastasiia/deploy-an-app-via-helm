@@ -1,0 +1,5 @@
+apiVersion: v2
+name: app-ingress
+description: A Helm library chart to generate Kubernetes Ingress for the app
+type: application
+version: 0.1.0
