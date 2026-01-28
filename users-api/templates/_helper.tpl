@@ -25,8 +25,11 @@ users-api: first
 {{- end }}
 
 {{- define "liveness-probe" -}}
-tcpSocket:
-  port: {{ .Values.app.port }}
+exec:
+  command:
+  - /bin/sh
+  - -c
+  - "curl -f http://127.0.0.1:3000/users/health-check | grep -q 'configuration'"
 initialDelaySeconds: 15
 periodSeconds: 15
 {{- end }}
